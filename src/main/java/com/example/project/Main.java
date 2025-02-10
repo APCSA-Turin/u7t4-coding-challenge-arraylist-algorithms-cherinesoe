@@ -344,18 +344,9 @@ public class Main{
             unique.add(numList[i]);
         }
         removeDuplicates(unique);
-        // for (int i = 0; i < numList.length; i++) {
-        //     for (int j = 0; j < unique.size(); j++) {
-        //         if (unique.get(j) != numList[i]) {
-        //             unique.add(numList[i]);
-        //             System.out.println(unique);
-        //         }
-        //     }
-        // }
         for (int i = 0; i < numList.length; i++) {
             int count = 1;
             for (int j = i + 1; j < numList.length; j++) {
-                // System.out.println(numList[i] + " and " + numList[j]);
                 if (numList[i] == numList[j]) {
                     count++;
                 }
@@ -373,9 +364,6 @@ public class Main{
         if (unique.equals(modes)) {
             return new ArrayList<Integer>();
         }
-        // if (numbers == modes.size()) {
-        //     return new ArrayList<Integer>();
-        // }
         return modes;
     }
 }
